@@ -1,6 +1,24 @@
 @import "tailwindcss";
 @import url("../styles/cabinet-grotesk.css");
 @import url("https://api.fontshare.com/v2/css?f[]=jet-brains-mono@300,200,500&f[]=cabinet-grotesk@400,800,300,500,600,200,100,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../font/Satoshi-Variable.woff2') format('woff2');
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Instrument Serif';
+  src: url('../font/InstrumentSerif-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --background: #ffffff;
@@ -14,6 +32,7 @@
   --scrollbar-track: #292524;
   --link-underline: #71717a;
   --link-hover: #f4f4f5;
+  --hover-color: #111111;
 
   /* Code highlighting colors */
   --code-comment: #71717a;
@@ -44,7 +63,7 @@
 } */
 
 body {
-  /* background: var(--background); */
+  /* background: var(--background);  */
   color: var(--foreground);
   font-family: var(--font-sans);
   color-scheme: dark;
@@ -67,7 +86,7 @@ body::-webkit-scrollbar-thumb {
 h2 {
   color: #fafafa;
   font-weight: 400;
-  font-size: 1.125rem;
+  /* font-size: 1.125rem; */
   /* letter-spacing: 0em; */
   /* line-height: 1; */
   line-height: 1.75rem;
@@ -98,6 +117,16 @@ footer p {
   width: 100%;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+}
+
+.bg-hoverColor {
+  background-color: var(--hover-color);
+}
+
+.font-instrument_serif {
+  font-family: 'Instrument Serif', serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @media (min-width: 1024px) {

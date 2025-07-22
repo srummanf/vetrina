@@ -2,6 +2,8 @@
 import { useState } from "react";
 import Footer from "@/components/Footer";
 import Misc from "@/components/Misc";
+import Header from "./Header";
+import { cn } from "@/lib/utils";
 
 export default function ClientWrapper({ children }: { children: React.ReactNode }) {
   const [showMisc, setShowMisc] = useState(false);
@@ -13,6 +15,7 @@ export default function ClientWrapper({ children }: { children: React.ReactNode 
   return (
     <>
       <main className="p-4 py-24 gap-6 w-full lg:w-[55%]">
+        <Header/>
         <section className="w-full flex gap-4 justify-start mb-6 p-2">
           <div className="flex items-center justify-center">
             <img
@@ -23,7 +26,7 @@ export default function ClientWrapper({ children }: { children: React.ReactNode 
           </div>
           <div className="flex flex-col gap-2 justify-end">
             <div>
-              <h2 className="mb-0">srummanf</h2>
+              <h2 className={cn("mb-0 text-[2.5rem] font-serif tracking-tight text-primary font-instrument_serif")}>Shaikh Rumman Fardeen</h2>
             </div>
             <div>
               <p className="mb-0 text-gray-400 font-normal leading-none">

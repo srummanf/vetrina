@@ -16,6 +16,7 @@ const config: Config = {
       fontFamily: {
         mono: ["JetBrains Mono", "monospace"],
         sans: ["Cabinet Grotesk", "sans-serif"],
+        instrument_serif: ["Instrument Serif", "serif"]
       },
       typography: ({ theme }: { theme: any }) => ({
         DEFAULT: {
