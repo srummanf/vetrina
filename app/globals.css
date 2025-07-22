@@ -267,3 +267,5 @@ mark {
 .token.class-name {
   color: var(--code-fn);
 }
+
+/*Initial Gradient - bg-gradient-to-tr from-zinc-950 via-[#242a2b] to-neutral-950 */

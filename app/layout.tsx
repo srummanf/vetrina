@@ -1,9 +1,7 @@
-
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import ClientWrapper from "@/components/ClientWrapper";
 import "./globals.css";
-
 
 export const metadata: Metadata = {
   title: "srummanf's vetrina",
@@ -18,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`font-sans bg-gradient-to-tr from-zinc-950 via-[#242a2b] to-neutral-950 overflow-x-hidden min-w-screen flex min-h-screen flex-col items-center justify-between`}
+        className={`font-sans bg-[#0d0e0e] overflow-x-hidden min-w-screen`}
       >
         <ClientWrapper>{children}</ClientWrapper>
       </body>
