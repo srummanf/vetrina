@@ -15,7 +15,7 @@ export default function LoadingScreen({
   const [loadingFinished, setLoadingFinished] = useState(false);
 
   const greetings = [
-    "• Hello",
+    "• Hello *",
     "• Ciao",
     "• Salve",
     "• Hola",
@@ -71,12 +71,12 @@ export default function LoadingScreen({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-white text-6xl md:text-8xl font-bold"
+              className="text-white text-6xl md:text-8xl font-bold font-instrument_serif"
             >
               {greetings[currentGreeting]}
             </motion.h1>
           ) : (
-            <h1 className="text-white text-6xl md:text-8xl font-bold">
+            <h1 className="text-white text-6xl md:text-8xl font-bold font-instrument_serif">
               {greetings[currentGreeting]}
             </h1>
           )}
