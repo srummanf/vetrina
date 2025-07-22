@@ -21,7 +21,7 @@ export default function Home() {
         </p>
       </section>
       {/* <p className="divider italic">{"/ / / / / / / /"}</p> */}
-      {/* <FM /> */}
+      <FM />
       {/* <p className="divider italic">{"/ / / / / / / /"}</p> */}
       <section className="w-full flex flex-col justify-start p-[0.4rem]">
         <h2 className="mb-8">Find me here ~</h2>
