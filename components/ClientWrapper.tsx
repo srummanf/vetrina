@@ -91,6 +91,7 @@ import Footer from "@/components/Footer";
 import Misc from "@/components/Misc";
 import Header from "./Header";
 import LoadingScreen from "./LoadingScreen";
+import ClickSound from "@/components/ClickSound";
 import { cn } from "@/lib/utils";
 
 export default function ClientWrapper({
@@ -117,7 +118,7 @@ export default function ClientWrapper({
   return (
     <>
       {isLoading && <LoadingScreen onLoadingComplete={handleLoadingComplete} />}
-      
+      <ClickSound />
       <div 
         className={`w-full min-h-screen flex flex-col items-center justify-between transition-opacity duration-700 ${
           showContent ? 'opacity-100' : 'opacity-0'
