@@ -8,13 +8,15 @@ const Misc = () => {
   return (
     <div className="p-4 pt-24 pb-12 gap-6">
       <div className="flex flex-col gap-12 w-full h-full">
-        <div className="">
-          <span className="font-Italianno italic text-2xl tracking-wide">
+        <div className="border-b border-b-stone-800/90 p-4">
+          <span className="font-Italianno italic text-2xl tracking-wide ">
             Well, looks like we have a friend here.
           </span>
           <p className="my-5">
-            Welcome to my home. ! Atlast, we enjoin through some warmth and love.
-            <br />It's a reflection we all need to take, a moment to pause and
+            Welcome to my home. ! Atlast, we enjoin through some warmth and
+            love.
+            <br />
+            It's a reflection we all need to take, a moment to pause and
             <br />
             Imagine, Think, Read, Reflect
             <br />
@@ -22,16 +24,15 @@ const Misc = () => {
             pacing.
             <br />
             <br />
-            
             thank you 𓂃.
           </p>
-          <p
-            className={`mt-12 text-xl font-instrument_serif`}
-          >
-            Here's my aoidion — quiet, but it lingers.
-          </p>
         </div>
-        <ShayariBlock/>
+        <div className="">
+          <span className=" italic text-2xl tracking-wide font-instrument_serif">
+            Here's my aoidion — quiet, but it lingers.
+          </span>
+        </div>
+        <ShayariBlock />
         <HiddenFooter />
       </div>
     </div>
@@ -39,7 +40,6 @@ const Misc = () => {
 };
 
 export default Misc;
-
 
 // This is the old Misc component with all the components and sections
 
@@ -130,4 +130,3 @@ export default Misc;
 // };
 
 // export default Misc;
-

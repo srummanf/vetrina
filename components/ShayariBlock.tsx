@@ -37,10 +37,10 @@ export default function ShayariBlock() {
             damping: 10,
           }}
         >
-          <p className="text-zinc-400 leading-relaxed whitespace-pre-line text-sm md:text-base font-medium">
+          <p className="text-zinc-400 leading-relaxed whitespace-pre-line text-sm md:text-base font-medium ">
             {shayari.poem_couplet}
           </p>
-          <p className="text-[#747474] text-xs md:text-sm tracking-wider uppercase font-semibold">
+          <p className="text-[#747474] text-xs md:text-sm tracking-wider uppercase font-semibold font-instrument_serif">
             — {shayari.poet_name}
           </p>
         </motion.div>
