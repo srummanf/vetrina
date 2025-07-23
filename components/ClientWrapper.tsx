@@ -61,7 +61,7 @@ export default function ClientWrapper({
                 <div className="flex items-center gap-1.5 font-medium tracking-tight">
                   <h2 className="text-base text-foreground">developer</h2>
                   <span className="text-[#b56333]">•</span>
-                  <h2 className="text-base text-foreground">designer</h2>
+                  <h2 className="text-base text-foreground">aoidos</h2>
                   <span className="text-[#b56333]">•</span>
                   <h2 className="text-base text-foreground">selenophile</h2>
                 </div>

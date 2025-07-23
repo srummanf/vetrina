@@ -7,7 +7,3 @@ export const alexBrush = Alex_Brush({
   display: 'swap',
 });
 
-/** 
- * 1. Create a new file named app/font.ts.
- * 
-*/
