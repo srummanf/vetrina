@@ -1,5 +1,5 @@
 import React from "react";
-import FM from "./FM";
+import SpotifyNP from "@/components/SpotifyNP";
 
 const Misc = () => {
   return (
@@ -23,7 +23,7 @@ const Misc = () => {
           </p>
         </section>
         {/* <p className="divider italic">{"/ / / / / / / /"}</p> */}
-        <FM />
+        <SpotifyNP />
         {/* <p className="divider italic">{"/ / / / / / / /"}</p> */}
         <section className="w-full flex flex-col justify-start p-[0.4rem]">
           <h2 className="mb-8">Find me here ~</h2>

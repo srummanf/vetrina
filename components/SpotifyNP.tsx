@@ -17,8 +17,8 @@ type Song = {
   playing: boolean;
 };
 
-export default function FM() {
-  const { data, error } = useSWR<Song>("/api/fm", fetcher, {
+export default function SpotifyNP() {
+  const { data, error } = useSWR<Song>("/api/np", fetcher, {
     refreshInterval: 10000,
   });
 

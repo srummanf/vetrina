@@ -44,7 +44,7 @@ export default function ClientWrapper({
               <img
                 src="/images/srummanf.jpg"
                 alt="avatar"
-                className="w-12 h-12 scale-110 object-cover rounded-full py-0 shadow-lg grayscale hover:grayscale-0 duration-300"
+                className="w-12 h-12 scale-110 object-cover rounded-full py-0 shadow-lg grayscale hover:grayscale-0 duration-300 ease-in"
               />
             </div>
             <div className="flex flex-col gap-2 justify-end">

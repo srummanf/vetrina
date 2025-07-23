@@ -1,8 +1,9 @@
-import FM from "@/components/FM";
+
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import Links from "@/components/Links";
+import SpotifyNP from "@/components/SpotifyNP";
 
 export default function Home() {
   return (
@@ -31,7 +32,7 @@ export default function Home() {
         </p>
       </section>
       {/* <p className="divider italic">{"/ / / / / / / /"}</p> */}
-      <FM />
+      <SpotifyNP />
       <p className="divider italic">{"/ / / / / / sad/ /"}</p>
       {/* <Links/> */}
       <section className="w-full flex flex-col justify-start p-[0.4rem]">
