@@ -1,4 +1,7 @@
+"use client";
 import Time from "./Time";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface FooterProps {
   showMisc: boolean;
@@ -6,10 +9,42 @@ interface FooterProps {
 }
 
 export default function Footer({ showMisc, toggleMisc }: FooterProps) {
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+  const currentYear = new Date().getFullYear();
+  
+  const rotatingTexts = [
+    "made by srummanf",
+    `${currentYear}`
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTextIndex((prev) => (prev + 1) % rotatingTexts.length);
+    }, 2000); // Change text every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [rotatingTexts.length]);
+
   return (
     <footer className="flex px-4 py-4 justify-center gap-6 items-center w-full border-y border-stone-800/90">
       <div className="w-full lg:w-[55%] flex justify-between items-center">
-        <p className="leading-none m-0">made by srummanf</p>
+        <div className="relative h-5 flex items-center">
+          <AnimatePresence mode="wait">
+            <motion.p
+              key={currentTextIndex}
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -20, opacity: 0 }}
+              transition={{ 
+                duration: 0.5, 
+                ease: "easeInOut" 
+              }}
+              className="leading-none m-0 absolute left-0 whitespace-nowrap"
+            >
+              {rotatingTexts[currentTextIndex]}
+            </motion.p>
+          </AnimatePresence>
+        </div>
         <Time />
         {/* Toggle Button */}
         <button
@@ -31,10 +66,10 @@ export default function Footer({ showMisc, toggleMisc }: FooterProps) {
             >
               <path
                 fill="currentColor"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M8 6.25C8 5.56 8.56 5 9.25 5h8.5c.69 0 1.25.56 1.25 1.25v8.5a1.25 1.25 0 1 1-2.5 0V9.268l-9.366 9.366a1.25 1.25 0 0 1-1.768-1.768L14.732 7.5H9.25C8.56 7.5 8 6.94 8 6.25"
-                clip-rule="evenodd"
-              ></path>
+                clipRule="evenodd"
+              />
             </svg>
           ) : (
             // SVG 2: When inactive
@@ -50,15 +85,14 @@ export default function Footer({ showMisc, toggleMisc }: FooterProps) {
             >
               <path
                 fill="currentColor"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M18.634 5.366a1.25 1.25 0 0 0-1.768 0L7.5 14.732V9.25a1.25 1.25 0 1 0-2.5 0v8.5c0 .69.56 1.25 1.25 1.25h8.5a1.25 1.25 0 1 0 0-2.5H9.268l9.366-9.366a1.25 1.25 0 0 0 0-1.768"
-                clip-rule="evenodd"
-              ></path>
+                clipRule="evenodd"
+              />
             </svg>
           )}
         </button>
       </div>
-      
     </footer>
   );
 }
