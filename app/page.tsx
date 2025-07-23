@@ -11,7 +11,7 @@ export default function Home() {
         <p>
           Lorem ipsum dolor sit . Quos alias, omnis accusantium
           <a>amet consectetur adipisicing elit</a> ~ amet{" "}
-          <a>amet consectetur adipisicing elit</a> said <mark> srummanf </mark>
+          <a className={cn("relative inline-block hover-underline text-gray-300 hover:text-[#b56333] transition-colors")}>amet consectetur adipisicing elit</a> said <mark className="text-[#ddbb90]"> srummanf </mark>
           lorem.
         </p>
         <p>
@@ -86,9 +86,9 @@ export default function Home() {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M12 3v3m0 12v3M5.636 5.636l2.122 2.121m8.485 8.486 2.121 2.121M3 12.001h3m12 0h3M5.636 18.364l2.122-2.121m8.485-8.486 2.121-2.121"
               ></path>
             </svg>
@@ -107,7 +107,7 @@ export default function Home() {
           on internet—whether on{" "}
           <a
             target="_blank"
-            className="underlines"
+            className={cn("relative inline-block hover-underline text-gray-300 hover:text-[#b56333] transition-colors")}
             rel="noopener"
             href="https://instagram.com/ig.srummanf"
           >
@@ -116,7 +116,7 @@ export default function Home() {
           or{" "}
           <a
             target="_blank"
-            className="underlines"
+            className={cn("relative inline-block hover-underline text-gray-300 hover:text-[#b56333] transition-colors")}
             rel="noopener"
             href="https://github.com/srummanf"
           >
@@ -125,7 +125,7 @@ export default function Home() {
           or{" "}
           <a
             target="_blank"
-            className="underlines"
+            className={cn("relative inline-block hover-underline text-gray-300 hover:text-[#b56333] transition-colors")}
             rel="noopener"
             href="https://linkedin.com/in/srummanf"
           >

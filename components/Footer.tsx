@@ -12,15 +12,34 @@ export default function Footer({ showMisc, toggleMisc }: FooterProps) {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const currentYear = new Date().getFullYear();
   
+  // Motivational 3-4 word sentences
+  const motivationalTexts = [
+    "Keep pushing forward",
+    "Dream bigger today",
+    "Create something amazing", 
+    "Never stop learning",
+    "Build your future",
+    "Code with passion",
+    "Make it happen",
+    "Stay curious always",
+    "Think outside box",
+    "Embrace the journey"
+  ];
+
+  // Pick random motivational text on component mount
+  const [selectedMotivationalText] = useState(() => {
+    return motivationalTexts[Math.floor(Math.random() * motivationalTexts.length)];
+  });
+  
   const rotatingTexts = [
-    "made by srummanf",
-    `${currentYear}`
+    selectedMotivationalText,
+    `© ${currentYear}`
   ];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTextIndex((prev) => (prev + 1) % rotatingTexts.length);
-    }, 2000); // Change text every 3 seconds
+    }, 2000); // Change text every n seconds
 
     return () => clearInterval(interval);
   }, [rotatingTexts.length]);
