@@ -30,6 +30,12 @@ export default function Header({ showHomeLink = false }: HeaderProps) {
         >
           <span className="text-primary">projects</span>
         </Link>
+        <Link
+          href="/projects"
+          className="hover:text-accent underline-offset-4 transition duration-150 ease-in-out hover:underline"
+        >
+          <span className="text-primary">projects</span>
+        </Link>
       </div>
     </nav>
   );

@@ -1,13 +1,23 @@
 import React from "react";
 import Link from "next/link";
 import ProjectCard from "@/components/ProjectCard";
+import Header from "@/components/Header";
 import { projects } from "@/data/projects";
+import Subheader from "@/components/Subheader";
 
 const page = () => {
   return (
     <>
-      <section className="pt-8">
-        <h2 className="font-medium tracking-tight text-foreground mb-5 ">Projects</h2>
+      <Subheader />
+      <h1 className="font-serif text-[2.5rem] tracking-tight text-primary">
+        Projects
+      </h1>
+      <h2 className="text-base font-medium tracking-tight text-foreground">
+        some thoughts on design, code, and life.
+      </h2>
+
+      <section className="pt-4">
+        
         <div className="pt-1.5">
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
