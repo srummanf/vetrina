@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { IoArrowBack } from "react-icons/io5";
 
@@ -28,14 +29,13 @@ export default function Header({ showHomeLink = false }: HeaderProps) {
           href="/projects"
           className="hover:text-accent underline-offset-4 transition duration-150 ease-in-out hover:underline"
         >
-          <span className="text-primary">projects</span>
+          <span className={cn(
+            "relative inline-block hover-underline text-gray-300 hover:text-[#b56333] transition-colors"
+          )}>
+            projects
+          </span>
         </Link>
-        <Link
-          href="/projects"
-          className="hover:text-accent underline-offset-4 transition duration-150 ease-in-out hover:underline"
-        >
-          <span className="text-primary">projects</span>
-        </Link>
+        
       </div>
     </nav>
   );

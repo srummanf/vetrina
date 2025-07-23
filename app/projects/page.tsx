@@ -9,14 +9,14 @@ const page = () => {
   return (
     <>
       <Subheader />
-      <h1 className="font-serif text-[2.5rem] tracking-tight text-primary">
+      <h1 className="font-instrument_serif text-[2.5rem] tracking-tight text-primary">
         Projects
       </h1>
       <h2 className="text-base font-medium tracking-tight text-foreground">
-        some thoughts on design, code, and life.
+        ~ some showcase of whatever I am doing.
       </h2>
 
-      <section className="pt-4">
+      <section className="pt-8">
         
         <div className="pt-1.5">
           {projects.map((project) => (

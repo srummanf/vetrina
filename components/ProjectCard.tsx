@@ -18,12 +18,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         rel="noreferrer"
         className="group relative -mx-3 w-full transform rounded-lg px-3 py-2 transition-all duration-300 ease-in-out md:hover:scale-[1.02] hover:bg-[#171717]"
       >
-        <div className="flex items-center justify-between text-sm font-medium tracking-tight text-foreground md:group-hover:text-accent">
+        <div className="flex items-center justify-between font-medium tracking-tight md:group-hover:text-accent">
           <div className="flex items-center">
-            <h3 className="text-primary">{project.title}</h3>
+            <h1 className="text-[1rem] font-bold text-white">{project.title}</h1>
           </div>
         </div>
-        <p className="text-sm text-foreground">{project.description}</p>
+        <p className="text-[0.87rem] text-gray-400">{project.description}</p>
       </Link>
     </div>
   )
