@@ -2,6 +2,7 @@ import FM from "@/components/FM";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import Links from "@/components/Links";
 
 export default function Home() {
   return (
@@ -11,7 +12,14 @@ export default function Home() {
         <p>
           Lorem ipsum dolor sit . Quos alias, omnis accusantium
           <a>amet consectetur adipisicing elit</a> ~ amet{" "}
-          <a className={cn("relative inline-block hover-underline text-gray-300 hover:text-[#b56333] transition-colors")}>amet consectetur adipisicing elit</a> said <mark className="text-[#ddbb90]"> srummanf </mark>
+          <a
+            className={cn(
+              "relative inline-block hover-underline text-gray-300 hover:text-[#b56333] transition-colors"
+            )}
+          >
+            amet consectetur adipisicing elit
+          </a>{" "}
+          said <mark className="text-[#ddbb90]"> srummanf </mark>
           lorem.
         </p>
         <p>
@@ -24,33 +32,9 @@ export default function Home() {
       </section>
       {/* <p className="divider italic">{"/ / / / / / / /"}</p> */}
       <FM />
-      {/* <p className="divider italic">{"/ / / / / / / /"}</p> */}
+      <p className="divider italic">{"/ / / / / / sad/ /"}</p>
+      {/* <Links/> */}
       <section className="w-full flex flex-col justify-start p-[0.4rem]">
-        <h2 className="mb-8">Find me here ~</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-y-6 gap-x-12">
-          <div>
-            <p className="mb-2 text-zinc-400 font-semibold">GitHub</p>
-            <a href="https://github.com/srummanf">@srummanf</a>
-          </div>
-          <div>
-            <p className="mb-2 text-zinc-400 font-semibold">
-              X (formerly Twitter)
-            </p>
-            <a href="https://x.com/srummanf">@srummanf</a>
-          </div>
-          <div>
-            <p className="mb-2 text-zinc-400 font-semibold">LinkedIn</p>
-            <a href="https://www.linkedin.com/in/srummanf/">@srummanf</a>
-          </div>
-          <div>
-            <p className="mb-2 text-zinc-400 font-semibold">Email</p>
-            <a href="mailto:rummanfardeen4567@gmail.com">
-              rummanfardeen4567@gmail.com
-            </a>
-          </div>
-        </div>
-      </section>
-      <div>
         <div className="flex gap-3 items-center">
           <h1 className={cn("text-lg")}>Connect</h1>
           <div className="underlines bg-[#808080] h-[0.2px] w-full"></div>
@@ -107,7 +91,9 @@ export default function Home() {
           on internet—whether on{" "}
           <a
             target="_blank"
-            className={cn("relative inline-block hover-underline text-gray-300 hover:text-[#b56333] transition-colors")}
+            className={cn(
+              "relative inline-block hover-underline text-gray-300 hover:text-[#b56333] transition-colors"
+            )}
             rel="noopener"
             href="https://instagram.com/ig.srummanf"
           >
@@ -116,7 +102,9 @@ export default function Home() {
           or{" "}
           <a
             target="_blank"
-            className={cn("relative inline-block hover-underline text-gray-300 hover:text-[#b56333] transition-colors")}
+            className={cn(
+              "relative inline-block hover-underline text-gray-300 hover:text-[#b56333] transition-colors"
+            )}
             rel="noopener"
             href="https://github.com/srummanf"
           >
@@ -125,7 +113,9 @@ export default function Home() {
           or{" "}
           <a
             target="_blank"
-            className={cn("relative inline-block hover-underline text-gray-300 hover:text-[#b56333] transition-colors")}
+            className={cn(
+              "relative inline-block hover-underline text-gray-300 hover:text-[#b56333] transition-colors"
+            )}
             rel="noopener"
             href="https://linkedin.com/in/srummanf"
           >
@@ -133,41 +123,7 @@ export default function Home() {
           </a>
           , etc.
         </p>
-      </div>
-      {/* TEST */}
-      {/* <div className="mx-auto px-5 max-w-2xl px-6">
-        <div className="flex justify-between items-center gap-2">
-          <div>
-            <div className="relative inline-block whitespace-nowrap">
-              <div className="opacity-100 transform-none">
-                <p>Find flow.</p>
-              </div>
-            </div>
-          </div>
-          <div className="flex items-center gap-2">
-            <div>
-              <p className="font-[family-name:var(--font-montreal)]">sdvsd</p>
-            </div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="none"
-              viewBox="0 0 24 24"
-              className="justd-icons size-4 cursor-pointer"
-              data-slot="icon"
-              aria-hidden="true"
-            >
-              <path
-                fill="currentColor"
-                fill-rule="evenodd"
-                d="M8 6.25C8 5.56 8.56 5 9.25 5h8.5c.69 0 1.25.56 1.25 1.25v8.5a1.25 1.25 0 1 1-2.5 0V9.268l-9.366 9.366a1.25 1.25 0 0 1-1.768-1.768L14.732 7.5H9.25C8.56 7.5 8 6.94 8 6.25"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </div>
-        </div>
-      </div> */}
+      </section>
     </div>
   );
 }
