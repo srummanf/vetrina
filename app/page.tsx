@@ -31,7 +31,7 @@ export default function Home() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
       </section>
-      {/* <p className="divider italic">{"/ / / / / / / /"}</p> */}
+      <p className="divider italic">{"/ / / / / / / / / / / / / / / / / / / / / / / / / / / /"}</p>
       <SpotifyNP />
       <p className="divider italic">{"/ / / / / / sad/ /"}</p>
       {/* <Links/> */}

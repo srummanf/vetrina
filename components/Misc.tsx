@@ -1,9 +1,10 @@
 import React from "react";
 import SpotifyNP from "@/components/SpotifyNP";
+import HiddenFooter from "./HiddenFooter";
 
 const Misc = () => {
   return (
-    <div className="p-4 py-24 gap-6">
+    <div className="p-4 pt-24 pb-12 gap-6">
       <div className="flex flex-col gap-12 w-full h-full">
         <section className="w-full flex flex-col gap-4 justify-start p-[0.4rem] leading-[1.625rem]">
           <h2>Hello ~</h2>
@@ -50,6 +51,7 @@ const Misc = () => {
             </div>
           </div>
         </section>
+        <HiddenFooter/>
       </div>
     </div>
   );
