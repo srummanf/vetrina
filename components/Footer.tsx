@@ -58,6 +58,7 @@ export default function Footer({ showMisc, toggleMisc }: FooterProps) {
           )}
         </button>
       </div>
+      
     </footer>
   );
 }
