@@ -9,12 +9,12 @@ import clsx from "clsx";
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 type Song = {
-  name: string;
-  artist: string;
-  album: string;
-  image: string;
-  url: string;
-  np: boolean;
+  song_name: string;
+  artists: string;
+  album_name: string;
+  album_image: string;
+  spotify_url: string;
+  playing: boolean;
 };
 
 export default function FM() {
@@ -51,7 +51,7 @@ export default function FM() {
       >
         <div className="w-20 h-20">
           <img
-            src={data?.image}
+            src={data?.album_image}
             alt="cover-image"
             className="object-fit rounded-lg shadow-lg grayscale hover:grayscale-0 duration-300 ease-in"
           />
@@ -60,20 +60,20 @@ export default function FM() {
           <p
             className={clsx(
               "mb-0 leading-none text-sm",
-              data?.np ? "text-emerald-500" : "text-zinc-500"
+              data?.playing ? "text-emerald-500" : "text-zinc-500"
             )}
           >
-            {data?.np ? "Jamming to" : "Last played"}
+            {data?.playing ? "Jamming to" : "Last played"}
           </p>
           <p className="mb-0 leading-none">
             <a
-              href={data?.url || "#"}
+              href={data?.spotify_url || "#"}
               target="_blank"
               rel="norefferer"
               className="no-underline"
             >
-              {data?.name}
-              {" // "} {data?.artist}
+              {data?.song_name}
+              {" // "} {data?.artists}
             </a>
           </p>
         </div>
