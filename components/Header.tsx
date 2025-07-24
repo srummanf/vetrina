@@ -35,7 +35,16 @@ export default function Header({ showHomeLink = false }: HeaderProps) {
             projects
           </span>
         </Link>
-        
+        <Link
+          href="/me"
+          className="hover:text-accent underline-offset-4 transition duration-150 ease-in-out hover:underline"
+        >
+          <span className={cn(
+            "relative inline-block hover-underline text-gray-300 hover:text-[#b56333] transition-colors"
+          )}>
+            me
+          </span>
+        </Link>
       </div>
     </nav>
   );
