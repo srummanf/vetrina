@@ -29,7 +29,7 @@ const fetcher = async (url: string): Promise<Song> => {
   try {
     const res = await fetch(url);
     const data = await res.json();
-    // console.log("Fetched data:", data);
+    console.log("Fetched data:", data);
     return data;
   } catch (err) {
     console.warn("Falling back to default song due to error:", err);
@@ -48,59 +48,63 @@ export default function SpotifyNP() {
   });
 
   return (
-    <div className="w-full h-full" ref={ref}>
-      <motion.div
-        className="border border-stone-800/90 p-3 rounded-lg flex flex-row-reverse justify-between"
-        initial={{ opacity: 0, y: -30 }}
-        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -30 }}
-        transition={{
-          duration: 0.4,
-          type: "spring",
-          stiffness: 130,
-          damping: 9,
-        }}
-      >
-        <div className="w-20 h-20">
-          <img
-            src={data?.album_image}
-            alt="cover-image"
-            className="object-fit rounded-lg shadow-lg grayscale hover:grayscale-0 duration-300 ease-in"
-          />
-        </div>
-        <div className="flex flex-col gap-2 h-20 items-start justify-between">
-          <p
-            className={clsx(
-              "mb-0 leading-none text-sm flex items-center gap-1",
-              !data?.song_name
-                ? "text-rose-500"
-                : data?.playing
-                ? "text-emerald-500"
-                : "text-zinc-500"
-            )}
-          >
-            {!data?.song_name ? (
-              <span className="text-[#ea0000]">Stuck in mind</span>
-            ) : data?.playing ? (
-              "Jamming to"
-            ) : (
-              "Last played"
-            )}
-          </p>
-
-          <p className="mb-0 leading-none">
-            <a
-              href={data?.spotify_url || "#"}
-              target="_blank"
-              rel="noreferrer"
-              className="no-underline"
+    <>
+      <div className="w-full h-full" ref={ref}>
+        <motion.div
+          className="border border-stone-800/90 p-3 rounded-lg flex flex-row-reverse justify-between"
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -30 }}
+          transition={{
+            duration: 0.4,
+            type: "spring",
+            stiffness: 130,
+            damping: 9,
+          }}
+        >
+          <div className="w-20 h-20">
+            <img
+              src={data?.album_image}
+              alt="cover-image"
+              className="object-fit rounded-lg shadow-lg grayscale hover:grayscale-0 duration-300 ease-in"
+            />
+          </div>
+          <div className="flex flex-col gap-2 h-20 items-start justify-between">
+            <p
+              className={clsx(
+                "mb-0 leading-none text-sm flex items-center gap-1",
+                data?.song_name === fallbackData.song_name
+                  ? "text-rose-500"
+                  : data?.playing
+                  ? "text-emerald-500"
+                  : "text-zinc-500"
+              )}
             >
-              {data?.song_name}
-              {" // "} {data?.artists}
-            </a>
-          </p>
-        </div>
-      </motion.div>
-    </div>
+              {data?.song_name === fallbackData.song_name ? (
+                <>
+                  <span className="text-[#ea0000]">Stuck in mind</span>
+                </>
+              ) : data?.playing ? (
+                "Jamming to"
+              ) : (
+                "Last played"
+              )}
+            </p>
+
+            <p className="mb-0 leading-none">
+              <a
+                href={data?.spotify_url || "#"}
+                target="_blank"
+                rel="noreferrer"
+                className="no-underline"
+              >
+                {data?.song_name}
+                {" // "} {data?.artists}
+              </a>
+            </p>
+          </div>
+        </motion.div>
+      </div>
+    </>
   );
 }
 
