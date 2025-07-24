@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`font-sans bg-[#0d0e0e] overflow-x-hidden min-w-screen`}
+        className={`font-CabinetGrotesk_Light bg-[#0d0e0e] overflow-x-hidden min-w-screen`}
       >
         <ClientWrapper>{children}</ClientWrapper>
       </body>
