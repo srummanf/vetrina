@@ -22,29 +22,36 @@ export default function ShayariBlock() {
   }, []);
 
   return (
-    <div className="w-full h-full space-y-6" ref={ref}>
-      {selectedShayari.map((shayari, index) => (
-        <motion.div
-          key={index}
-          className="border border-stone-800/90 p-4 rounded-lg flex flex-col gap-3"
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -30 }}
-          transition={{
-            duration: 0.5,
-            delay: index * 0.1,
-            type: "spring",
-            stiffness: 120,
-            damping: 10,
-          }}
-        >
-          <p className="text-zinc-400 leading-relaxed whitespace-pre-line text-sm md:text-base font-medium ">
-            {shayari.poem_couplet}
-          </p>
-          <p className="text-[#747474] text-xs md:text-sm tracking-wider uppercase font-semibold font-instrument_serif">
-            — {shayari.poet_name}
-          </p>
-        </motion.div>
-      ))}
+    <div className="pl-4">
+      <div>
+        <span className="italic text-2xl tracking-wide font-instrument_serif">
+          Here's my aoidion — quiet, but it lingers.
+        </span>
+      </div>
+      <div className="w-full h-full space-y-6 mt-10" ref={ref}>
+        {selectedShayari.map((shayari, index) => (
+          <motion.div
+            key={index}
+            className="border border-stone-800/90 p-4 flex flex-col gap-3"
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -30 }}
+            transition={{
+              duration: 0.5,
+              delay: index * 0.1,
+              type: "spring",
+              stiffness: 120,
+              damping: 10,
+            }}
+          >
+            <p className="text-white leading-relaxed whitespace-pre-line text-[0.8rem]">
+              {shayari.poem_couplet}
+            </p>
+            <p className="text-[#747474] text-xs font-CabinetGrotesk_Thin">
+              — {shayari.poet_name}
+            </p>
+          </motion.div>
+        ))}
+      </div>
     </div>
   );
 }

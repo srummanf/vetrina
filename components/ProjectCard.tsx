@@ -1,12 +1,12 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 interface ProjectCardProps {
   project: {
-    id: number
-    title: string
-    description: string
-    link: string
-  }
+    id: number;
+    title: string;
+    description: string;
+    link: string;
+  };
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
@@ -20,11 +20,18 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       >
         <div className="flex items-center justify-between font-medium tracking-tight md:group-hover:text-accent">
           <div className="flex items-center">
-            <h1 className="text-[1rem] font-bold text-white">{project.title}</h1>
+            <h1 className="text-[1rem] font-CabinetGrotesk_Medium x text-white">
+              <span className="text-xs">𓂃</span>
+              {" "}
+              {project.title}
+              {" "}
+              {" "}
+              <span className="text-xs">𓂃</span>
+            </h1>
           </div>
         </div>
-        <p className="text-[0.87rem] text-gray-400">{project.description}</p>
+        <p className="text-[0.87rem] text-gray-400"> {project.description}</p>
       </Link>
     </div>
-  )
+  );
 }

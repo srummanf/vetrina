@@ -27,11 +27,6 @@ const Misc = () => {
             thank you 𓂃.
           </p>
         </div>
-        <div className="">
-          <span className=" italic text-2xl tracking-wide font-instrument_serif">
-            Here's my aoidion — quiet, but it lingers.
-          </span>
-        </div>
         <ShayariBlock />
         <HiddenFooter />
       </div>
