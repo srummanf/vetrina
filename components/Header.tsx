@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { IoArrowBack } from "react-icons/io5";
+import { location } from '@/data/location'; 
 
 interface HeaderProps {
   showHomeLink?: boolean;
@@ -43,6 +44,16 @@ export default function Header({ showHomeLink = false }: HeaderProps) {
             "relative inline-block hover-underline text-gray-300 hover:text-[#b56333] transition-colors"
           )}>
             me
+          </span>
+        </Link>
+        <Link
+          href="/lets-meet"
+          className="hover:text-accent underline-offset-4 transition duration-150 ease-in-out hover:underline"
+        >
+          <span className={cn(
+            "relative inline-block hover-underline text-gray-300 hover:text-[#b56333] transition-colors"
+          )}>
+            {location.city}, {location.country_code}
           </span>
         </Link>
       </div>

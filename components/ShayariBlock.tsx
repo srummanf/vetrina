@@ -20,6 +20,7 @@ export default function ShayariBlock() {
   useEffect(() => {
     const random = getRandomShayaris(shayariData, 2);
     setSelectedShayari(random);
+    console.log("Selected Shayari:", random);
   }, []);
 
   return (

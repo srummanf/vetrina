@@ -3,8 +3,11 @@ import { Geist, Geist_Mono } from "next/font/google";
 import ClientWrapper from "@/components/ClientWrapper";
 import "./globals.css";
 
+// Italic Unicode - Use https://lingojam.com/ItalicTextGenerator
+
+
 export const metadata: Metadata = {
-  title: "𝘴𝘳𝘶𝘮𝘮𝘢𝘯𝘧'𝘴 𝘷𝘦𝘵𝘳𝘪𝘯𝘢", // Italic Unicode - Use https://lingojam.com/ItalicTextGenerator
+  title: "𝘴𝘳𝘶𝘮𝘮𝘢𝘯𝘧'𝘴 𝘷𝘦𝘵𝘳𝘪𝘯𝘢", 
   description: "Tra bit e silenzi, l’anima cerca forma nel vuoto digitale.",
 };
 
