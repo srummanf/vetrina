@@ -10,3 +10,7 @@ export async function GET(request: Request) {
   const data = await res.json();
   return NextResponse.json(data);
 }
+
+/**
+ * If you wish to build and use this API, refer this Github Repository: https://github.com/srummanf/spotify-current-playing-server
+ */
