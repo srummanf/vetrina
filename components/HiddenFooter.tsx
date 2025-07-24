@@ -5,21 +5,29 @@ import Link from "next/link"; // Assuming you're using Next.js
 
 const HiddenFooter = () => {
   return (
-    <footer className="mt-10 flex py-4 gap-6 items-center w-full">
-      <div className="w-full flex items-center justify-between">
-        <p className="mt-12 text-xl font-bold italic font-instrument_serif">
-          Shaikh Rumman Fardeen
+    <footer className="flex py-4 gap-6 items-center w-full">
+      <div className="w-full p-4 flex items-center justify-between">
+        <p className="mt-12 pl-2 text-xl font-bold italic font-instrument_serif">
+          <Link
+            href="https://github.com/srummanf/vetrina/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=""
+          >
+            𓂃  Shaikh Rumman Fardeen   𓂃
+          </Link>
         </p>
 
         {/* GitHub Link aligned to end */}
-        <Link
+        {/* <Link
           href="https://github.com/srummanf/your-repo-name"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-12 text-xs text-gray-400 hover:underline tracking-widest opacity-30 hover:opacity-100 transition-opacity duration-300"
+          className="font-CabinetGrotesk_Thin font-semibold mt-12 text-xs text-[#ffffff] hover:underline tracking-widest opacity-20 hover:opacity-100 transition-opacity duration-300"
         >
           View Source Code
-        </Link>
+        </Link> */}
+
       </div>
     </footer>
   );

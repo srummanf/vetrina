@@ -55,6 +55,23 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "CabinetGrotesk-Thin";
+  src: url("../font/cabinet-grotesk/fonts/CabinetGrotesk-Thin.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CabinetGrotesk-ExtraLight";
+  src: url("../font/cabinet-grotesk/fonts/CabinetGrotesk-Extralight.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 
 
 :root {
@@ -315,6 +332,19 @@ mark {
 
 .font-CabinetGrotesk_Medium {
   font-family: "CabinetGrotesk-Medium", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-CabinetGrotesk_Thin {
+  font-family: "CabinetGrotesk-Thin", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.font-CabinetGrotesk_ExtraLight {
+  font-family: "CabinetGrotesk-ExtraLight", serif;
   font-weight: 400;
   font-style: normal;
 }
