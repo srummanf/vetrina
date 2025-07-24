@@ -38,6 +38,7 @@ This repository collects my favorite and inspirational developer portfolio websi
 | 32  | [cretu.dev](https://cretu.dev/)                                      | [cristicretu/cretu.dev](https://github.com/cristicretu/cretu.dev)                     |
 | 33  | [odhyp.com](https://odhyp.com/)                                      | [odhyp/odhyp.com](https://github.com/odhyp/odhyp.com)                                 |
 | 34  | [srummanfold.vercel.app](https://srummanfold.vercel.app/)            | [srummanf/Portfolio-v2](https://github.com/srummanf/Portfolio-v2)                     |
+| 35  | [Ferry By Chloe Yan](https://www.chloeyan.me/ferry)                  | *(Not available)*                                                                     |
 
 > *∞ This list is ever-growing. If you have suggestions, feel free to PR.*
 
