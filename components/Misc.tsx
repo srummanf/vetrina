@@ -28,7 +28,7 @@ const Misc = () => {
             through slow, honest pacing.
             <br />
             <br />
-            <span className="font-Italianno text-lg text-stone-400">thank you 𓂃</span>
+            {/* <span className="font-Italianno text-lg text-stone-400">thank you 𓂃</span> */}
           </p>
 
           
