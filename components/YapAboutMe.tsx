@@ -44,8 +44,9 @@ const YapAboutMe = () => {
           occasionally in life.
         </p>
         <p className="font-CabinetGrotesk_ExtraLight font-CabinetGrotesk_ExtraLight text-md text-gray-400">
-          You'll find me somewhere between solving bugs, reading Ahmad Faraz,
-          exploring AI models, and watching reels I said I wouldn't.
+          You'll find me somewhere between solving bugs, writing code, reading Ahmad Faraz,
+          discovering culinary hotspots in the area or watching reels I said I
+          wouldn't.
         </p>
         <p className="font-CabinetGrotesk_ExtraLight font-CabinetGrotesk_ExtraLight text-md text-gray-400">
           I read quotes of philosophy — Fyodor, Camus, Kafka — and somehow still

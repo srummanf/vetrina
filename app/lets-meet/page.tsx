@@ -16,10 +16,9 @@ const page = () => {
             </span>
             <p className="my-5 font-CabinetGrotesk_Light text-base leading-relaxed text-gray-300">
               I'm currently in{" "}
-              <span className="font-CabinetGrotesk_Medium">
-                {location.city}
-              </span>
-              ,{" "}
+              {/* <span className="font-CabinetGrotesk_Medium"> */}
+              {location.city}
+              {/* </span> */},{" "}
               <span className="uppercase tracking-wider">
                 {location.country_code}
               </span>
