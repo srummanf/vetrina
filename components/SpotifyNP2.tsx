@@ -136,6 +136,7 @@ export default function SpotifyNP2() {
                 className="no-underline"
               >
                 {data.song_name}
+                {" // "} {data.album_name}
                 {" // "} {data.artists}
               </a>
             </p>

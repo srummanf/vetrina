@@ -33,7 +33,9 @@ export default function ShayariBlock() {
       <div className="w-full h-full space-y-6 mt-10" ref={ref}>
         {selectedShayari.map((shayari, index) => (
           <motion.div
-            className="relative h-52 border border-stone-800/90 p-3 rounded-lg flex justify-between gap-4 group"
+            key={index}
+            className="relative border border-stone-800/90 p-3 rounded-lg flex justify-between gap-4 group"
+            style={{ minHeight: "fit-content" }}
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -30 }}
             transition={{
@@ -44,14 +46,14 @@ export default function ShayariBlock() {
             }}
           >
             {/* Content Div */}
-            <div className="w-[60%] flex flex-col gap-2 items-start justify-between">
+            <div className="w-[60%] flex flex-col gap-[7rem] items-start justify-between">
               <p
                 className={clsx(
                   "mb-0 leading-none text-sm",
                   shayari?.poet_name ? "text-orange-400" : "text-zinc-500"
                 )}
               >
-                {shayari?.poet_name ? "Contemplating on" : "Last played"}
+                Contemplating on
               </p>
               <p className="mb-0 leading-none whitespace-pre-line">
                 <a
@@ -66,13 +68,10 @@ export default function ShayariBlock() {
               </p>
             </div>
 
-            {/* Decorative Image in Bottom Right */}
-            {/* <img
-              src="/images/bottom-right.png"
-              alt="decorative"
-              className="absolute bottom-0 right-0 w-16 grayscale group-hover:grayscale-0 transition duration-300 ease-in-out"
-            /> */}
-            <p className="absolute bottom-0 right-0 w-8 pb-2 grayscale group-hover:grayscale-0 transition duration-300 ease-in-out text-orange-400">𖤐 </p>
+            {/* Decorative Element */}
+            <p className="absolute bottom-0 right-0 w-8 pb-2 grayscale group-hover:grayscale-0 transition duration-300 ease-in-out text-orange-400">
+              𖤐{" "}
+            </p>
           </motion.div>
         ))}
       </div>
