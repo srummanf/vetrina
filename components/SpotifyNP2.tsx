@@ -119,7 +119,7 @@ export default function SpotifyNP2() {
             >
               {data.song_name === fallbackData.song_name ? (
                 <>
-                  <span className="text-[#ea0000]">Stuckdd in mind</span>
+                  <span className="text-[#ea0000]">Stuck in mind</span>
                 </>
               ) : data.playing ? (
                 "Jamming to"

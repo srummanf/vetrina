@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { IoArrowBack } from "react-icons/io5";
-import { location } from '@/data/location'; 
+import { location } from "@/data/location";
 
 interface HeaderProps {
   showHomeLink?: boolean;
@@ -26,7 +26,7 @@ export default function Header({ showHomeLink = false }: HeaderProps) {
       <div
         className={`flex items-center gap-5 ${!showHomeLink ? "ml-auto" : ""}`}
       >
-        <Link
+        {/* <Link
           href="/projects"
           className="hover:text-accent underline-offset-4 transition duration-150 ease-in-out hover:underline"
         >
@@ -35,24 +35,17 @@ export default function Header({ showHomeLink = false }: HeaderProps) {
           )}>
             projects
           </span>
-        </Link>
-        <Link
-          href="/me"
-          className="hover:text-accent underline-offset-4 transition duration-150 ease-in-out hover:underline"
-        >
-          <span className={cn(
-            "relative inline-block hover-underline text-gray-300 hover:text-[#b56333] transition-colors"
-          )}>
-            me
-          </span>
-        </Link>
+        </Link> */}
+
         <Link
           href="/lets-meet"
           className="hover:text-accent underline-offset-4 transition duration-150 ease-in-out hover:underline"
         >
-          <span className={cn(
-            "relative inline-block hover-underline text-gray-300 hover:text-[#b56333] transition-colors"
-          )}>
+          <span
+            className={cn(
+              "relative inline-block hover-underline text-gray-300 hover:text-[#b56333] transition-colors"
+            )}
+          >
             {location.city}, {location.country_code}
           </span>
         </Link>
