@@ -12,5 +12,5 @@ export async function GET(request: Request) {
 }
 
 /**
- * If you wish to build and use this API, refer this Github Repository: https://github.com/srummanf/spotify-current-playing-server
+ * If you wish to build and use this server, refer this Github Repository: https://github.com/srummanf/spotify-current-playing-server
  */

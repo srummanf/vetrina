@@ -31,7 +31,7 @@ const Connect = () => {
         </div>
         <p className="mt-5 animate-fade-down animate-delay-[2000ms]">
           So yeah, that's me 𓆩 —
-          building, writing, vibing. Always down for a thoughtful chat or
+          building, reciting, vibing. Always down for a thoughtful chat or
           complete nonsense. Just depends on the hour.---
           <br />
           <br />

@@ -31,12 +31,12 @@ const page = () => {
               ambivert with layers, my friend.
               <br />
               <br />
-              Ideally, we'd meet over a slow coffee in a quiet café — or maybe at
-              a Chinese joint serving proper halal. But let's be honest… nothing
-              beats bonding over a Biryani ⊹ Raita ⊹ Coke combo. (Yes
+              Ideally, we'd meet over a slow coffee in a quiet café — or maybe
+              at a Chinese joint serving proper halal. But let's be honest…
+              nothing beats bonding over a Biryani ⊹ Raita ⊹ Coke combo. (Yes
               yes — Diet Coke with a 1000-calorie plate. Hypocrisy tastes good.)
-              <br/>
-              <br/>
+              <br />
+              <br />
               Am I always free? <span className="italic">Ha! </span> Not quite.
               But if you're my friend, or maybe my{" "}
               <span className="italic">amore</span> — I will **definitely** find

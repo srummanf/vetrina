@@ -15,19 +15,19 @@ export default function LoadingScreen({
   const [loadingFinished, setLoadingFinished] = useState(false);
 
   const greetings = [
-    "• Hello *",
-    "• Ciao",
-    "• Salve",
-    "• Hola",
-    "• السلام عليكم",
-    "• Merhaba",
-    "• Bonjour",
-  ];
+  "✦⟡ Hello ⟡✦",
+  "✦⟡ Ciao ⟡✦",
+  "✦⟡ हेल्लो ⟡✦",        
+  "✦⟡ Hola ⟡✦",
+  "✦⟡ السلام عليكم ⟡✦",
+  "✦⟡ Bonjour ⟡✦",
+  "✦⟡ سلام ⟡✦",         
+  "✦⟡ Konnichiwa ⟡✦",   
+  "✦⟡ Merhaba ⟡✦",
+];
 
-  // Increasing speed timings
-  // const greetingSpeeds = [280, 250, 220, 200, 190, 180, 170];
-  // const greetingSpeeds = [200, 170, 170, 170, 170, 165, 165];
-  const greetingSpeeds = [500, 150, 150, 150, 150, 140, 140];
+
+  const greetingSpeeds = [500, 150, 150, 150, 150, 150, 150, 150, 150];
 
   useEffect(() => {
     let timeouts: NodeJS.Timeout[] = [];
@@ -105,7 +105,6 @@ export default function LoadingScreen({
 //     "Hola",
 //     "السلام عليكم",
 //     "Merhaba",
-//     "नमस्ते"
 //   ];
 
 //   useEffect(() => {

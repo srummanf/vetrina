@@ -8,8 +8,8 @@ const YapAboutMe = () => {
       <section className="w-full flex flex-col gap-4 justify-start p-[0.4rem] leading-[1.625rem]">
         <div className="flex items-center gap-3 w-full">
           <h2 className={cn("text-lg")}>
-            Hola, señorita or monsieur—whichever you are—I'm{" "}
-            <mark className="text-[#ddbb90]">srummanf</mark>.
+            Hola, señorita // monsieur—whichever you are—You can call me{" "}
+            <mark className="text-[#ddbb90]">Rumman</mark>.
           </h2>
           <div className="underlines bg-[#808080] h-[0.2px] flex-1"></div>
           <div className="">
@@ -33,7 +33,7 @@ const YapAboutMe = () => {
             </svg>
           </div>
         </div>
-        
+
         {/* <h2 className="font-CabinetGrotesk_ExtraLight font-CabinetGrotesk_Medium text-lg text-[#ddbb90]">
           Hola, señorita or monsieur—whichever you are—I'm{" "}
           <mark className="text-[#ddbb90]">srummanf</mark>.
@@ -50,7 +50,7 @@ const YapAboutMe = () => {
         <p className="font-CabinetGrotesk_ExtraLight font-CabinetGrotesk_ExtraLight text-md text-gray-400">
           I read quotes of philosophy — Fyodor, Camus, Kafka — and somehow still
           believe in love. Urdu poetry? Absolutely. Romantic nonsense? Count me
-          in. I'm the kind of guy who'll debug code and recite Ghalib in the
+          in. I'm the kind of guy who'll debug code and recite Muneer in the
           same breath.
         </p>
         <p className="font-CabinetGrotesk_ExtraLight font-CabinetGrotesk_Light text-md text-gray-400">
@@ -65,10 +65,12 @@ const YapAboutMe = () => {
         <p className="font-CabinetGrotesk_ExtraLight font-CabinetGrotesk_Light text-md text-gray-400">
           I admire the brilliance of{" "}
           <span className="text-[#b56333]">Iron Man</span> — tech, heart,
-          sacrifice. But there’s something about Al Pacino. *The Godfather*?
-          Legendary. *Scent of a Woman*? Don’t even get me started —{" "}
-          <span className="italic text-[#ddbb90]">Woo Haah!</span>
+          sacrifice. But there’s something about Al Pacino.{" "}
+          <span className="italic">The Godfather</span>? Legendary.{" "}
+          <span className="italic">Scent of a Woman</span>? Don’t even get me
+          started — <span className="italic text-[#ddbb90]">Woo Haah!</span>
         </p>
+
         <SlashDivider />
         {/* <p className="font-CabinetGrotesk_Thin text-md text-gray-400 mb-0">
           So yeah, that's me. <mark className="text-[#ddbb90]">srummanf</mark> —
