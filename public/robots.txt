@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://srummanf.vercel.app/sitemap.xml

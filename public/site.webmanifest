@@ -1,0 +1,15 @@
+{
+  "name": "srummanf's vetrina",
+  "short_name": "vetrina",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#171717",
+  "theme_color": "#ddbb90",
+  "icons": [
+    {
+      "src": "/images/opengraph-cover.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
