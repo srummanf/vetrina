@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://srummanf.vercel.app",
     siteName: "srummanf's vetrina",
-    title: "srummanf's vetrina — Code. Verse. Vibe.",
+    title: "srummanf's vetrina.",
     description:
       "srummanf | Developer ✦ Bard ✦ Selenophile. Enter the vetrina.",
     images: [
