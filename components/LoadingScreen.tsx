@@ -19,6 +19,7 @@ export default function LoadingScreen({
   "✦⟡ Ciao ⟡✦",
   "✦⟡ हेल्लो ⟡✦",        
   "✦⟡ Hola ⟡✦",
+  "✦⟡ Buongiorno principessa ⟡✦",
   "✦⟡ السلام عليكم ⟡✦",
   "✦⟡ Bonjour ⟡✦",
   "✦⟡ سلام ⟡✦",         
@@ -27,7 +28,7 @@ export default function LoadingScreen({
 ];
 
 
-  const greetingSpeeds = [500, 150, 150, 150, 150, 150, 150, 150, 150];
+  const greetingSpeeds = [500, 150, 150, 150, 150, 150, 150, 150, 150, 150];
 
   useEffect(() => {
     let timeouts: NodeJS.Timeout[] = [];

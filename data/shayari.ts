@@ -126,14 +126,135 @@ ek aisī zindagī jo is tarah mushkil na ho
 dil ko ḳhushī ke saath saath hotā rahā malāl bhī
 `,
   },
+  {
+    poet_name: "Jawad Sheikh",
+    poem_couplet: `aap jaisoñ ke liye is meñ rakhā kuchh bhī nahīñ
+lekin aisā to na kahiye ki vafā kuchh bhī nahīñ
+
+aap kahiye to nibhāte chale jā.eñge magar
+is ta'alluq meñ aziyyat ke sivā kuchh bhī nahīñ
+`,
+  },
+  {
+    poet_name: "Allama Iqbal",
+    poem_couplet: `Huzoor (S.A.W) ! Dehr Mein Aasudgi Nahin Milti
+Talash Jis Ki Hai Woh Zindagi Nahin Milti
+`,
+  },
+  {
+    poet_name: "Naseer Turabi",
+    poem_couplet: `Vo bewafa hai to kya mat kaho bura usko
+Ki jo hua so hua khush rakhe khuda usko
+
+Nazar na aaye to uski talash mein rahna
+Kahi mile to palat kar na dekhna usko
+`,
+  },
+  {
+    poet_name: "Saleem Kausar",
+    poem_couplet: `kabhī lauT aa.eñ to pūchhnā nahīñ dekhnā unheñ ġhaur se
+jinheñ rāste meñ ḳhabar huī ki ye rāsta koī aur hai
+`,
+  },
+  {
+    poet_name: "Tarik Aziz",
+    poem_couplet: `Hum wo siyah naseeb hain ki 'tarik' shaher me
+Khole dukaan kafan ki to sab marna chhod de
+`,
+  },
+  {
+    poet_name: "Javed Akhtar",
+    poem_couplet: `chhod kar jisko gye the aap, koi aur tha
+Ab main koi aur hu, wapas to aake dekhiye
+`,
+  },
+  {
+    poet_name: "Jaun Elia",
+    poem_couplet: `jī hī jī meñ vo jal rahī hogī
+chāñdnī meñ Tahal rahī hogī
+
+chāñd ne taan lī hai chādar-e-abr
+ab vo kapḌe badal rahī hogī
+
+so ga.ī hogī vo shafaq-andām
+sabz qindīl jal rahī hogī
+
+surḳh aur sabz vādiyoñ kī taraf
+vo mire saath chal rahī hogī
+
+chaḌhte chaḌhte kisī pahāḌī par
+ab vo karvaT badal rahī hogī
+
+`,
+  },
+  {
+    poet_name: "Faiz Ahmed Faiz",
+    poem_couplet: `aur kuchh der meñ jab phir mire tanhā dil ko
+fikr aa legī ki tanhā.ī kā kyā chāra kare
+
+dard aa.egā dabe paañv liye surḳh charāġh
+vo jo ik dard dhaḌaktā hai kahīñ dil se pare
+`,
+  },
+  {
+    poet_name: "Bashir Badr",
+    poem_couplet: `ye phuul mujhe koī virāsat meñ mile haiñ
+tum ne mirā kāñToñ bharā bistar nahīñ dekhā
+`,
+  },
+  {
+    poet_name: "Ahmad Faraz",
+    poem_couplet: `maiñ aaj zad pe agar huuñ to ḳhush-gumān na ho
+charāġh sab ke bujheñge havā kisī kī nahīñ
+`,
+  },
+  {
+    poet_name: "Amjad Islam Amjad",
+    poem_couplet: `Wo damakti hui lau kahani Hui
+Wo chamakdaar sholaa fasana hua
+Wo jo uljha tha wehshi hawaa se kabhi
+Uss diye ko bujhe huye zamana hogaya 
+
+Ab to "Amjad" judaai ke uss mod tak
+Dard ki dhundh hai aur kuch bhi nahi
+Janeman! Ab wo din lautne ke nahi
+Chhoriye, ab wo kissa puraana hua
+`,
+  },
+  {
+    poet_name: "Muneer Niyazi",
+    poem_couplet: `ḳhayāl jis kā thā mujhe ḳhayāl meñ milā mujhe
+savāl kā javāb bhī savāl meñ milā mujhe
+
+kisī ko apne amal kā hisāb kyā dete
+savāl saare ġhalat the javāb kyā dete
+`,
+  },
+  {
+    poet_name: "Mirza Ghalib",
+    poem_couplet: `muddat huī hai yaar ko mehmāñ kiye hue
+josh-e-qadah se bazm charāġhāñ kiye hue
+
+kartā huuñ jam.a phir jigar-e-laḳht-laḳht ko
+arsa huā hai dāvat-e-mizhgāñ kiye hue
+
+dil phir tavāf-e-kū-e-malāmat ko jaa.e hai
+pindār kā sanam-kada vīrāñ kiye hue
+
+māñge hai phir kisī ko lab-e-bām par havas
+zulf-e-siyāh ruḳh pe pareshāñ kiye hue
+
+ik nau-bahār-e-nāz ko taake hai phir nigāh
+chehra faroġh-e-mai se gulistāñ kiye hue
+
+jī DhūñDtā hai phir vahī fursat ki raat din
+baiThe raheñ tasavvur-e-jānāñ kiye hue
+
+'ġhālib' hameñ na chheḌ ki phir josh-e-ashk se
+baiThe haiñ ham tahayya-e-tūfāñ kiye hue
+`,
+  },
 ];
-
-
-
-
-
-
-
 
 /**
  *
