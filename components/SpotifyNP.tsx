@@ -1,3 +1,14 @@
+/**
+ * SpotifyNP Component - Now Playing Display
+ * 
+ * Note: This component is using SWR library which uses cached state.
+ * When the external API returns errors, SWR would serve stale cached data instead 
+ * of falling back to the fallback data, making it appear as if the API was working
+ * when it was actually returning errors. This version uses vanilla fetch with 
+ * no-cache headers to ensure real-time API status.
+ * 
+ */
+
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
@@ -15,6 +26,7 @@ type Song = {
   playing: boolean;
 };
 
+// This works in a fashion that if the played song is the same as this fallback song, it will display "Stuck in mind" instead of "Jamming to" or "Last played".
 const fallbackData: Song = {
   playing: true,
   song_name: "back to friends",
@@ -29,7 +41,7 @@ const fetcher = async (url: string): Promise<Song> => {
   try {
     const res = await fetch(url);
     const data = await res.json();
-    console.log("Fetched data:", data);
+    // console.log("Fetched Music data:", data);
     return data;
   } catch (err) {
     console.warn("Falling back to default song due to error:", err);
@@ -107,6 +119,10 @@ export default function SpotifyNP() {
     </>
   );
 }
+
+// -----------------------------------------------------------------------------------------------------------------------------------
+
+// CODE with no fallback state.
 
 // /* eslint-disable @next/next/no-img-element */
 // "use client";
