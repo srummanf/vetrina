@@ -27,7 +27,7 @@ export default function ShayariBlock() {
     <div className="pl-4">
       <div>
         <span className="italic text-2xl tracking-wide font-instrument_serif">
-          Here's my aoidion — quiet, but it lingers.
+         These are my whispers — quiet, but it lingers.
         </span>
       </div>
       <div className="w-full h-full space-y-6 mt-10" ref={ref}>

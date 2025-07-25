@@ -5,7 +5,7 @@ import Link from "next/link"; // Assuming you're using Next.js
 
 const HiddenFooter = () => {
   return (
-    <footer className="flex py-4 gap-6 items-center w-full">
+    <footer className="flex py gap-6 items-center w-full">
       <div className="w-full p-4 flex items-center justify-between">
         <p className="mt-12 pl-2 text-xl font-bold italic font-instrument_serif">
           <Link
@@ -14,7 +14,8 @@ const HiddenFooter = () => {
             rel="noopener noreferrer"
             className=""
           >
-            𓂃  Shaikh Rumman Fardeen   𓂃
+            𓂃 ⋆｡°✩ stepping back with quiet grace ✩°｡⋆ 𓂃𓍯
+
           </Link>
         </p>
 
