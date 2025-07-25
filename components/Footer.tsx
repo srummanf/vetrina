@@ -12,19 +12,29 @@ export default function Footer({ showMisc, toggleMisc }: FooterProps) {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const currentYear = new Date().getFullYear();
   
-  // Motivational 3-4 word sentences
   const motivationalTexts = [
-    "Keep pushing forward",
-    "Dream bigger today",
-    "Create something amazing", 
-    "Never stop learning",
-    "Build your future",
-    "Code with passion",
-    "Make it happen",
-    "Stay curious always",
-    "Think outside box",
-    "Embrace the journey"
-  ];
+  "Chase the feeling",
+  "Write your myth",
+  "Romance the unknown",
+  "Risk the fall",
+  "Feel, then create",
+  "Stay wildly curious",
+  "Fear means forward",
+  "Make meaning daily",
+  "Love your chaos",
+  "Whisper to fate",
+  "Dare with grace",
+  "Code like poetry",
+  "Speak your fire",
+  "Rebuild, then rise",
+  "Softness is strength",
+  "Live like letters",
+  "Wound into wonder",
+  "Think, feel, repeat",
+  "Truth takes time",
+  "Keep the ache",
+];
+
 
   // Pick random motivational text on component mount
   const [selectedMotivationalText] = useState(() => {
