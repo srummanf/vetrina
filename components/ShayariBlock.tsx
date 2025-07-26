@@ -18,7 +18,7 @@ export default function ShayariBlock() {
   const [selectedShayari, setSelectedShayari] = useState<Shayari[]>([]);
 
   useEffect(() => {
-    const random = getRandomShayaris(shayariData, 2);
+    const random = getRandomShayaris(shayariData, 1);
     setSelectedShayari(random);
     console.log("Selected Shayari:", random);
   }, []);
@@ -26,9 +26,9 @@ export default function ShayariBlock() {
   return (
     <div className="pl-4">
       <div>
-        <span className="italic text-2xl tracking-wide font-instrument_serif">
+        {/* <span className="italic text-2xl tracking-wide font-instrument_serif">
          These are my whispers — quiet, but it lingers.
-        </span>
+        </span> */}
       </div>
       <div className="w-full h-full space-y-6 mt-10" ref={ref}>
         {selectedShayari.map((shayari, index) => (
