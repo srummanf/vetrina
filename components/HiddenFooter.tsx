@@ -21,7 +21,7 @@ const HiddenFooter = () => {
 
         {/* GitHub Link aligned to end */}
         {/* <Link
-          href="https://github.com/srummanf/your-repo-name"
+          href="https://github.com/srummanf/vetrina/"
           target="_blank"
           rel="noopener noreferrer"
           className="font-CabinetGrotesk_Thin font-semibold mt-12 text-xs text-[#ffffff] hover:underline tracking-widest opacity-20 hover:opacity-100 transition-opacity duration-300"

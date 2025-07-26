@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "𝘴𝘳𝘶𝘮𝘮𝘢𝘯𝘧'𝘴 𝘷𝘦𝘵𝘳𝘪𝘯𝘢",
   description:
     "srummanf | Developer ✦ Bard ✦ Selenophile. Enter the vetrina.",
-  metadataBase: new URL("https://srummanf.vercel.app"), // change this to your actual domain
+  metadataBase: new URL("https://srummanf.vercel.app"), 
   keywords: [
     "srummanf",
     "developer",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
       "srummanf | Developer ✦ Bard ✦ Selenophile. Enter the vetrina.",
     images: [
       {
-        url: "/images/opengraph-cover.png", // ⬅️ You need to create this image
+        url: "/images/opengraph-cover.png", 
         width: 1200,
         height: 630,
         alt: "srummanf | Developer ✦ Bard ✦ Selenophile. Enter the vetrina.",
@@ -47,8 +47,8 @@ export const metadata: Metadata = {
     title: "srummanf | Developer ✦ Bard ✦ Selenophile. Enter the vetrina.",
     description:
       "srummanf | Developer ✦ Bard ✦ Selenophile. Enter the vetrina.",
-    images: ["/images/opengraph-cover.png"], // ⬅️ Create this too
-    creator: "@srummanf", // use your actual Twitter/X handle
+    images: ["/images/opengraph-cover.png"], 
+    creator: "@srummanf", 
   },
   robots: {
     index: true,
