@@ -13,23 +13,43 @@ export default function LoadingScreen({
   const [currentGreeting, setCurrentGreeting] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
   const [loadingFinished, setLoadingFinished] = useState(false);
+  const [greetings, setGreetings] = useState<string[]>([]);
 
-  const greetings = [
-  "✦⟡ Hello ⟡✦",
-  "✦⟡ Ciao ⟡✦",
-  "✦⟡ हेल्लो ⟡✦",        
-  "✦⟡ Hola ⟡✦",
-  "✦⟡ السلام عليكم ⟡✦",
-  "✦⟡ Bonjour ⟡✦",
-  "✦⟡ سلام ⟡✦",         
-  "✦⟡ Konnichiwa ⟡✦",   
-  "✦⟡ Merhaba ⟡✦",
-];
+  const desktopGreetings = [
+    "✦⟡ Hello ⟡✦",
+    "✦⟡ Hola ⟡✦",
+    "✦⟡ हेल्लो ⟡✦",
+    "✦⟡ السلام عليكم ⟡✦",
+    "✦⟡ Bonjour ⟡✦",
+    "✦⟡ سلام ⟡✦",
+    "✦⟡ Konnichiwa ⟡✦",
+    "✦⟡ Merhaba ⟡✦",
+    "✦⟡ Ciao ⟡✦",
+  ];
 
+  const mobileGreetings = [
+    "⟡ Hello ⟡",
+    "⟡ हेल्लो ⟡",
+    "⟡ Hola ⟡",
+    "⟡ やあ ⟡",
+    "⟡ Salve ⟡",
+    "⟡ Bonjour ⟡",
+    "⟡ سلام ⟡",
+    "⟡ Merhaba ⟡",
+    "⟡ Ciao ⟡",
+  ];
 
   const greetingSpeeds = [500, 150, 150, 145, 145, 145, 145, 145, 145];
 
   useEffect(() => {
+    // Detect screen width
+    const isMobile = window.innerWidth <= 768;
+    setGreetings(isMobile ? mobileGreetings : desktopGreetings);
+  }, []);
+
+  useEffect(() => {
+    if (greetings.length === 0) return;
+
     let timeouts: NodeJS.Timeout[] = [];
     let totalTime = 0;
 
@@ -44,8 +64,8 @@ export default function LoadingScreen({
             setTimeout(() => {
               setLoadingFinished(true);
               onLoadingComplete();
-            }, 500); // Curtain slide duration
-          }, 500); // Last greeting duration
+            }, 500);
+          }, 500);
         }
       }, totalTime);
 
@@ -53,7 +73,7 @@ export default function LoadingScreen({
     });
 
     return () => timeouts.forEach(clearTimeout);
-  }, [onLoadingComplete]);
+  }, [greetings, onLoadingComplete]);
 
   return (
     <AnimatePresence>
@@ -65,26 +85,119 @@ export default function LoadingScreen({
           transition={{ duration: 1, ease: [0.76, 0, 0.24, 1] }}
           className="fixed inset-0 z-50 flex items-center justify-center bg-[#0d0e0e]"
         >
-          {currentGreeting === 0 ? (
-            <motion.h1
-              key={currentGreeting}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="text-white text-6xl md:text-8xl font-bold font-instrument_serif"
-            >
-              {greetings[currentGreeting]}
-            </motion.h1>
-          ) : (
-            <h1 className="text-white text-6xl md:text-8xl font-bold font-instrument_serif">
-              {greetings[currentGreeting]}
-            </h1>
+          {greetings.length > 0 && (
+            <>
+              {currentGreeting === 0 ? (
+                <motion.h1
+                  key={currentGreeting}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                  className="text-white text-6xl md:text-8xl font-bold font-instrument_serif"
+                >
+                  {greetings[currentGreeting]}
+                </motion.h1>
+              ) : (
+                <h1 className="text-white text-6xl md:text-8xl font-bold font-instrument_serif">
+                  {greetings[currentGreeting]}
+                </h1>
+              )}
+            </>
           )}
         </motion.div>
       )}
     </AnimatePresence>
   );
 }
+
+// "use client";
+
+// import { useState, useEffect } from "react";
+// import { motion, AnimatePresence } from "framer-motion";
+
+// interface LoadingScreenProps {
+//   onLoadingComplete: () => void;
+// }
+
+// export default function LoadingScreen({
+//   onLoadingComplete,
+// }: LoadingScreenProps) {
+//   const [currentGreeting, setCurrentGreeting] = useState(0);
+//   const [isVisible, setIsVisible] = useState(true);
+//   const [loadingFinished, setLoadingFinished] = useState(false);
+
+//   const greetings = [
+//   "✦⟡ Hello ⟡✦",
+//   "✦⟡ Ciao ⟡✦",
+//   "✦⟡ हेल्लो ⟡✦",
+//   "✦⟡ Hola ⟡✦",
+//   "✦⟡ السلام عليكم ⟡✦",
+//   "✦⟡ Bonjour ⟡✦",
+//   "✦⟡ سلام ⟡✦",
+//   "✦⟡ Konnichiwa ⟡✦",
+//   "✦⟡ Merhaba ⟡✦",
+// ];
+
+//   const greetingSpeeds = [500, 150, 150, 145, 145, 145, 145, 145, 145];
+
+//   useEffect(() => {
+//     let timeouts: NodeJS.Timeout[] = [];
+//     let totalTime = 0;
+
+//     greetingSpeeds.forEach((speed, index) => {
+//       totalTime += speed;
+//       const t = setTimeout(() => {
+//         setCurrentGreeting(index);
+
+//         if (index === greetings.length - 1) {
+//           setTimeout(() => {
+//             setIsVisible(false);
+//             setTimeout(() => {
+//               setLoadingFinished(true);
+//               onLoadingComplete();
+//             }, 500); // Curtain slide duration
+//           }, 500); // Last greeting duration
+//         }
+//       }, totalTime);
+
+//       timeouts.push(t);
+//     });
+
+//     return () => timeouts.forEach(clearTimeout);
+//   }, [onLoadingComplete]);
+
+//   return (
+//     <AnimatePresence>
+//       {!loadingFinished && (
+//         <motion.div
+//           initial={{ y: 0 }}
+//           animate={{ y: isVisible ? 0 : "-100%" }}
+//           exit={{ y: "-100%" }}
+//           transition={{ duration: 1, ease: [0.76, 0, 0.24, 1] }}
+//           className="fixed inset-0 z-50 flex items-center justify-center bg-[#0d0e0e]"
+//         >
+//           {currentGreeting === 0 ? (
+//             <motion.h1
+//               key={currentGreeting}
+//               initial={{ opacity: 0, y: 20 }}
+//               animate={{ opacity: 1, y: 0 }}
+//               transition={{ duration: 0.6 }}
+//               className="text-white text-6xl md:text-8xl font-bold font-instrument_serif"
+//             >
+//               {greetings[currentGreeting]}
+//             </motion.h1>
+//           ) : (
+//             <h1 className="text-white text-6xl md:text-8xl font-bold font-instrument_serif">
+//               {greetings[currentGreeting]}
+//             </h1>
+//           )}
+//         </motion.div>
+//       )}
+//     </AnimatePresence>
+//   );
+// }
+
+// -------------------------------------------------------------------------------------------------------------------------------------
 
 // 'use client';
 
