@@ -7,14 +7,15 @@ This repository collects my favorite and inspirational developer portfolio websi
 <th>Portfolio Website</th>
 <th>GitHub Repository</th>
 </tr>
+<tr><td><a href="https://github.com/emmabostian/developer-portfolios">emmabostian/developer-portfolios</a></td><td><a href="https://github.com/emmabostian/developer-portfolios">emmabostian/developer-portfolios</a></td></tr>
 
-<tr><td><a href="https://www.mirsazzathossain.me/">mirsazzathossain.me</a></td><td><a href="https://github.com/mirsazzathossain/mirsazzathossain.me">mirsazzathossain/mirsazzathossain.me</a></td></tr>
+<tr><td><a href="https://github.com/Evavic44/portfolio-ideas">Evavic44/portfolio-ideas</a></td><td><a href="https://github.com/Evavic44/portfolio-ideas">Evavic44/portfolio-ideas</a></td></tr>
+
+<tr><td><a href="https://www.mirsazzathossain.me/">mirsazzathossain.me</a></td><td><a href="https://github.com/mirsazzathossain/mirsazzathossain.me">wirtzdan/website</a></td></tr>
 
 <tr><td><a href="https://danielwirtz.com/">danielwirtz.com/</a></td><td><a href="https://github.com/wirtzdan/website">danielwirtz.com</a></td></tr>
 
-
 <tr><td><a href="https://next-blog-mdx.vercel.app/">next-blog-mdx.vercel.app </a></td><td><a href="https://github.com/leerob/next-mdx-blog">Next.js + MDX blog template with Tailwind CSS and TypeScript.</a></td></tr>
-
 
 <tr><td><a href="https://tinygameboy.vercel.app/">tinygameboy.vercel.app/</a></td><td><em>(Not available)</em></td></tr>
 </tr>
