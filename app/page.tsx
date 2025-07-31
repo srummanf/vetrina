@@ -7,7 +7,8 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-12 w-full h-full">
       <YapAboutMe />
-      <SpotifyNP2 />
+      <SpotifyNP/>
+      {/* <SpotifyNP2 /> */}
       <Connect />
     </div>
   );

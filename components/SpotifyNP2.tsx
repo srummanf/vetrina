@@ -1,3 +1,13 @@
+/**
+ * SpotifyNP2 Component - Now Playing Display
+ * 
+ * Note: This component is NOT using SWR library.
+ * When the external API returns errors, a fallback data will be displayed.
+ * 
+ */
+
+/* eslint-disable @next/next/no-img-element */
+
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
