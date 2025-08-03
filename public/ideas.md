@@ -7,9 +7,12 @@ This repository collects my favorite and inspirational developer portfolio websi
 <th>Portfolio Website</th>
 <th>GitHub Repository</th>
 </tr>
-<tr><td><a href="https://github.com/emmabostian/developer-portfolios">emmabostian/developer-portfolios</a></td><td><a href="https://github.com/emmabostian/developer-portfolios">emmabostian/developer-portfolios</a></td></tr>
 
+<tr><td><a href="https://github.com/emmabostian/developer-portfolios">emmabostian/developer-portfolios</a></td><td><a href="https://github.com/emmabostian/developer-portfolios">emmabostian/developer-portfolios</a></td></tr>
 <tr><td><a href="https://github.com/Evavic44/portfolio-ideas">Evavic44/portfolio-ideas</a></td><td><a href="https://github.com/Evavic44/portfolio-ideas">Evavic44/portfolio-ideas</a></td></tr>
+
+
+<tr><td><a href="https://zenorocha.com/">https://zenorocha.com/</a></td><td><a href="https://github.com/zenorocha/zenorocha.com">zenorocha/zenorocha.com</a></td></tr>
 
 <tr><td><a href="https://www.mirsazzathossain.me/">mirsazzathossain.me</a></td><td><a href="https://github.com/mirsazzathossain/mirsazzathossain.me">wirtzdan/website</a></td></tr>
 
