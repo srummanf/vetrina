@@ -14,9 +14,8 @@ export default function Time() {
     const interval = setInterval(() => {
       setTime(new Date().toLocaleTimeString());
     }, 1000);
-
     return () => clearInterval(interval);
-  });
+  }, []);
 
   useEffect(() => {
     setMounted(true);
