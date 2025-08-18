@@ -9,7 +9,7 @@ const YapAboutMe = () => {
         <div className="flex items-center gap-3 w-full">
           <h2 className={cn("text-lg")}>
             Hola, señorita // monsieur—whichever you are—You can call me{" "}
-            <mark className="text-[#ddbb90]">Rumman</mark>.
+            <mark className="text-[#ddbb90]">Rumi</mark>.
           </h2>
           <div className="underlines bg-[#808080] h-[0.2px] flex-1"></div>
           <div className="">

@@ -29,12 +29,12 @@ type Song = {
 
 const fallbackData: Song = {
   playing: true,
-  song_name: "back to friends",
-  artists: "sombr",
+  song_name: "The Winner Takes It All",
+  artists: "ABBA",
   album_image:
-    "https://i.scdn.co/image/ab67616d0000b2739d24f74c1e2d8a12b1e591ec",
-  album_name: "back to friends",
-  spotify_url: "https://open.spotify.com/track/0FTmksd2dxiE5e3rWyJXs6",
+    "https://i.scdn.co/image/ab67616d0000b2734d08fc99eff4ed52dfce91fa",
+  album_name: "Super Trouper",
+  spotify_url: "https://open.spotify.com/track/3oEkrIfXfSh9zGnE7eBzSV",
 };
 
 export default function SpotifyNP2() {
