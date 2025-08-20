@@ -254,6 +254,74 @@ baiThe raheñ tasavvur-e-jānāñ kiye hue
 baiThe haiñ ham tahayya-e-tūfāñ kiye hue
 `,
   },
+  {
+    poet_name: "Zia Moheyuddin",
+    poem_couplet: `Main tumhari aankhon mein pyaar ban kay rehta hun,
+Noor banke basta hun,
+Khawab ban ke zinda hun,
+Mere saare khuwabon ko
+in jameel aankhon kay aik goshay mein
+tum chupa kay rakh lena,
+Aur agar kabhi ye khuwab
+phool bankar mahkay
+toh inki khusbuon mein
+tum merey naam kay sab harf
+ehtiyat say rakhna,
+ehtiyat say rakhna.
+`,
+  },
+  {
+    poet_name: "Zia Moheyuddin",
+    poem_couplet: `Main tumhari aankhon mein pyaar ban kay rehta hun,
+Noor banke basta hun,
+Khawab ban ke zinda hun,
+Mere saare khuwabon ko
+in jameel aankhon kay aik goshay mein
+tum chupa kay rakh lena,
+Aur agar kabhi ye khuwab
+phool bankar mahkay
+toh inki khusbuon mein
+tum merey naam kay sab harf
+ehtiyat say rakhna,
+ehtiyat say rakhna.
+`,
+  },
+  {
+    poet_name: "Javed Akhtar",
+    poem_couplet: `main bhul jaun tumhein
+ab yahi munasib hai
+
+magar bhulana bhi chahun to kis tarah bhulun
+ki tum to phir bhi haqiqat ho
+
+koi KHwab nahin
+yahan to dil ka ye aalam hai kya kahun
+
+kam-baKHt
+bhula na paya wo silsila
+
+jo tha hi nahin
+wo ek KHayal
+
+jo aawaz tak gaya hi nahin
+wo ek baat
+
+jo main kah nahin saka tum se
+wo ek rabt
+
+jo hum mein kabhi raha hi nahin
+mujhe hai yaad wo sab
+
+jo kabhi hua hi nahin
+`,
+  },
+  {
+    poet_name: "Ahmed Faraz",
+    poem_couplet: `maiñ aaj zad pe agar huuñ to ḳhush-gumān na ho
+charāġh sab ke bujheñge havā kisī kī nahīñ
+
+`,
+  },
 ];
 
 /**
